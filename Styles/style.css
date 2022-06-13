@@ -1,10 +1,19 @@
 @import url('../main.css');
 
+
 header li{
     display: flex;
     justify-content: center;
     padding: 10px;
 }
+
+header img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+}
+
 .ul-hidden{
     display: none;
     box-shadow: 0px 5px 4px rgba(0, 206, 255, 0.34);
@@ -27,4 +36,9 @@ header li{
 a{
     text-decoration: none;
     color: white;
+}
+
+h1{
+    padding: 10px;
+    text-align: center;
 }
