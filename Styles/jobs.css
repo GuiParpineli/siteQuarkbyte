@@ -1,0 +1,7 @@
+@import url('/main.css');
+@import url('/Styles/header.css');
+
+main{
+    text-align: center;
+    padding: 1em;
+}

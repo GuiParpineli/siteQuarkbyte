@@ -1,0 +1,98 @@
+@import url('/main.css');
+@import url('/Styles/header.css');
+
+.team{
+    text-align: center;
+    padding: 2em;
+}
+
+.team :last-child{
+    margin-top: 1em;
+}
+
+.img-team{
+    padding: 1em;
+}
+
+.img-team > img{
+    background-color: bisque;
+    width: 6.5em;
+    height: 6.5em;
+    border-radius: 50%;
+
+}
+
+.img-home  {
+    padding: 2em;
+
+}
+
+/* site em tamanho desktop */
+@media (min-width: 720px) {
+
+    header {
+        display: flex;
+    }
+
+    header img {
+        left: 0;
+        display: block;
+        width: 10%;
+        margin: 0em 1em;
+        padding: 1.5em;
+        transform: translate(0);
+    }
+
+    nav {
+        display: flex;
+
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .ul-visible {
+        display: none;
+
+    }
+
+    .ul-hidden2 {
+        padding: 1em;
+        display: flex;
+        height: 3em;
+        box-shadow: 0px 5px 4px rgba(0, 206, 255, 0.34);
+        margin: 3em 1em;
+        background-color: var(--secondary);
+        border-radius: 30px;
+
+        align-items: center;
+    }
+
+    .ul-hidden2 :first-child a {
+        color: var(--primary);
+    }
+
+    .ul-hidden2 :first-child:hover {
+        color: var(--primary);
+    }
+
+    nav::after {
+        content: "";
+        top: 4em;
+        position: relative;
+        width: 50vw;
+        height: 5px;
+        color: white;
+        background-color: white;
+    }
+
+    .ul-hidden {
+        display: none;
+    }
+
+
+}
