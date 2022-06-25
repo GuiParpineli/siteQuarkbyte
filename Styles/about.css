@@ -72,7 +72,7 @@
         align-items: center;
     }
 
-    .ul-hidden2 :first-child a {
+    .ul-hidden2 :nth-child(2) a {
         color: var(--primary);
     }
 
@@ -94,5 +94,17 @@
         display: none;
     }
 
+   .team-pics{
+    display: flex;
+    justify-content: space-around;
+   } 
+        
+   .img-home{
+    display: flex;
+    justify-content: center;
+   }
 
+   .img-home img{
+      width: 50vw; 
+   }
 }
