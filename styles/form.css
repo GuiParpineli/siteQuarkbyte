@@ -1,0 +1,48 @@
+@import url('/main.css');
+@import url('/styles/header.css');
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.label{
+    padding: 1em;
+}
+
+input{
+    padding: .8em;
+    border: 0;
+    border-radius: 1em;
+    width: 20em;
+}
+
+textarea{
+    border-radius: 1em;
+}
+
+.checkbox{
+    display: flex;
+    justify-content: center;
+    padding: .8em;
+    font-weight: 600; 
+}
+
+.checkbox input{
+    margin: 0;
+    padding: 0;
+   width: 10%; 
+    
+}
+
+button{
+    padding: 1em;
+    width: 20em;
+}
+
+button:active{
+    background-color: var(--secondary);
+}

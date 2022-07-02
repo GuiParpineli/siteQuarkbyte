@@ -1,52 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="styles/form.css">
     <script defer src="scripts/script.js"></script>
     <title>QuarkByte</title>
 </head>
+
 <body>
 
-<header>
-    <img src="assets/LOGO.png" alt="logo-quarkbyte">
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Quem Somos</a></li>
-            <li><a href="jobs.html">Nosso Trabalho</a></li>
-            <li><a href="form.html">Contato</a></li>
-        </ul>    
-    </nav>
-</header>
+    <header>
+        <nav>
+            <img src="/assets/LOGO.png" alt="logo-quarkbyte">
+            <ul class="ul-hidden">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Quem Somos</a></li>
+                <li><a href="jobs.html">Nosso Trabalho</a></li>
+                <li><a href="form.html">Contato</a></li>
+            </ul>
+            <ul class="ul-hidden2">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Quem Somos</a></li>
+                <li><a href="jobs.html">Nosso Trabalho</a></li>
+                <li><a href="form.html">Contato</a></li>
+            </ul>
+            <ul class="ul-visible">
+                <li><a href="about.html">Quem Somos</a></li>
+            </ul>
+        </nav>
+    </header>
     <form action="">
-        <div>
-        <label for="name">Nome</label>
+        <div class="label">
+            <label for="name">Nome</label>
+        </div>
         <input type="text" id="name">
-        </div>
 
-        <div>
-        <label for="email">Email</label>
+        <div class="label">
+            <label for="email">Email</label>
+        </div>
         <input type="email" id="email">
-        </div>
 
-        <div>
-        <label for="telefone">Telefone</label>
+        <div class="label">
+            <label for="telefone">Telefone</label>
+        </div>
         <input type="number" id="telefone">
-        </div>
 
-        <div>
-        <label for="msgem">Mensagem<label for="msgem">
-       <textarea name="Mensagem" id="msgem" cols="30" rows="10">Digite sua mensagem</textarea>
-        </div>
+        <div class="label">
+            <label for="msgem">Mensagem<label for="msgem">
+        </div class="label">
+        <textarea name="Mensagem" id="msgem" cols="30" rows="10">Digite sua mensagem</textarea>
 
-        <label for="checkbox">Permitir contato via Whatsapp?</label>
-        <input type="checkbox">
+        <div class="checkbox">
+            <label for="checkbox">Permitir contato via Whatsapp?</label>
+            <input type="checkbox">
+        </div>
         <div>
-        <button type="submit">Enviar</button>
+            <button type="submit">Enviar</button>
         </div>
     </form>
 </body>
+
 </html>
