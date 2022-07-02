@@ -13,6 +13,14 @@ form{
     padding: 1em;
 }
 
+small{
+    color: red;
+}
+
+.small-number{
+    color: white;
+}
+
 input{
     padding: .8em;
     border: 0;
