@@ -1,6 +1,6 @@
-@import url('main.css');
+@import url('/main.css');
 
-@import url('styles/header.css');
+@import url('header.css');
 
 a {
     text-decoration: none;
