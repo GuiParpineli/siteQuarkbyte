@@ -56,6 +56,10 @@ button:active{
     background-color: var(--secondary);
 }
 
+button:hover{
+  transform: scale(1.1);
+}
+
 
 @media (min-width: 720px){
 

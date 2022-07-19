@@ -19,7 +19,7 @@ const errorMsg = a => {
   $(a).appendChild(small)
 }
 
-nome.onblur = a => {
+nome.onblur = () => {
 
   $('.name-error').innerHTML = '';
   if ((regx.test($('#name').value) && $('#name').value != '')) {
@@ -30,15 +30,15 @@ nome.onblur = a => {
   }
 }
 
-const tele = $('#telefone');
+//const tele = $('#telefone');
 
-tele.onkeyup = () => {
+/*tele.onkeyup = () => {
   if (tele.value.length === 2) {
     tele.value += '-';
   } if (tele.value.length === 8) {
     tele.value += '-';
   }
-}
+}*/
 
 $('#submit-btn').onclick = a => {
   a.preventDefault();
