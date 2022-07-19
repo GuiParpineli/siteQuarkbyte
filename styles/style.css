@@ -36,7 +36,7 @@ button {
 }
 
 /* site em tamanho desktop */
-@media (min-width: 1280px) {
+@media (min-width: 1300px) {
 
   .ul-hidden2 :nth-child(1) a {
     color: var(--primary);
@@ -88,14 +88,13 @@ button {
 
 }
 
-@media (min-width: 720px) {
+@media (max-width: 1280px) {
 
   .ul-hidden2 :nth-child(1) a {
     color: var(--primary);
   }
 
   main {
-    margin-top: 1em;
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
@@ -123,12 +122,12 @@ button {
     font-size: 1.2em;
   }
   .img-home {
-    position: relative;
     justify-content: center;
   }
 
   .img-home img {
     width: 100vw;
+    padding: 5rem;
   }
 
 }
