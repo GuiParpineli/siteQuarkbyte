@@ -2,88 +2,133 @@
 @import url('header.css');
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 h1 {
-    padding: 10px 15px;
-    font-weight: 900;
-    text-align: center;
+  padding: 10px 15px;
+  font-weight: 900;
+  text-align: center;
 }
 
 p {
-    padding: 10px;
-    text-align: center;
+  padding: 10px;
+  text-align: center;
 }
 
 button {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    padding: 10px;
-    width: 15em;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px;
+  width: 15em;
 }
 
 .img-home {
-    padding-top: 1em;
-    display: flex;
-    justify-content: center;
+  padding-top: 1em;
+  display: flex;
+  justify-content: center;
 }
 
 .img-home img {
-    width: 20em;
+  width: 20em;
 }
 
 /* site em tamanho desktop */
+@media (min-width: 1280px) {
+
+  .ul-hidden2 :nth-child(1) a {
+    color: var(--primary);
+  }
+
+  main {
+    margin-top: 1em;
+    display: flex;
+    justify-content: left;
+  }
+
+  .text-main {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: left;
+    padding: 1em 7em;
+    margin-top: 4em;
+    gap: .5em;
+  }
+
+  h1 {
+    font-size: 48px;
+    font-weight: 900;
+    padding-bottom: 0;
+    text-align: left;
+  }
+
+  p {
+    text-align: left;
+  }
+
+
+  button {
+    position: relative;
+    left: 13em;
+    width: 25em;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  .img-home {
+    position: relative;
+    justify-content: center;
+  }
+
+  .img-home img {
+    width: 50vw;
+  }
+
+}
+
 @media (min-width: 720px) {
 
-    .ul-hidden2 :nth-child(1) a {
-        color: var(--primary);
-    }
+  .ul-hidden2 :nth-child(1) a {
+    color: var(--primary);
+  }
 
-    main {
-        display: flex;
-        justify-content: left;
-    }
+  main {
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
 
-    .text-main {
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        justify-content: left;
-        padding: 1em 7em;
-        gap: .5em;
-    }
+  .text-main {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: left;
+    padding: 1em 7em;
+    gap: .5em;
+  }
 
-    h1 {
-        font-size: 48px;
-        font-weight: 900;
-        padding-bottom: 0;
-        text-align: left;
-    }
+  h1 {
+    font-size: 48px;
+    font-weight: 900;
+    padding-bottom: 0;
+  }
 
-    p {
-        text-align: left;
-    }
+  button {
+    position: relative;
+    width: 25em;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  .img-home {
+    position: relative;
+    justify-content: center;
+  }
 
-
-    button {
-        position: relative;
-        left: 13em;
-        width: 25em;
-        font-weight: 600;
-        font-size: 1.2em;
-    }
-.img-home {
-
-        position: relative;
-        display: flex;
-        justify-content: center;
-    }
-
-    .img-home img {
-        width: 50vw;
-    }
+  .img-home img {
+    width: 100vw;
+  }
 
 }
