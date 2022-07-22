@@ -91,7 +91,7 @@ a {
         content: "";
         top: 4.5em;
         position: relative;
-        width: 80vw;
+        width: calc(100vw - 50em);
         height: 5px;
         color: white;
         background-color: white;
