@@ -1,49 +1,54 @@
 @import url('../main.css');
 @import url('header.css');
+
 .team{
-    text-align: center;
-    padding: 2em;
+  position: relative;
+  text-align: center;
+  padding: 2em;
+  transform: translate(-50%);
+  left:50%;
 }
 
-.team :last-child{
-    margin-top: 1em;
+.team-pics{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .img-team{
-    padding: 1em;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: var(--secondary);
 }
 
 .img-team > img{
-    background-color: bisque;
-    width: 6.5em;
-    height: 6.5em;
-    border-radius: 50%;
-
+  width: 6.5em;
+  height: 6.5em;
+  border-radius: 50%;
 }
 
 .img-home  {
-    padding: 2em;
-
+  padding: 2em;
 }
 
 /* site em tamanho desktop */
 @media (min-width: 720px) {
 
-    .ul-hidden2 :nth-child(2) a {
-        color: var(--primary);
-    }
+  .ul-hidden2 :nth-child(2) a {
+    color: var(--primary);
+  }
 
-   .team-pics{
+  .team-pics{
     display: flex;
     justify-content: space-around;
-   } 
-        
-   .img-home{
+  } 
+
+  .img-home{
     display: flex;
     justify-content: center;
-   }
+  }
 
-   .img-home img{
-      width: 50vw; 
-   }
+  .img-home img{
+    width: 50vw; 
+  }
 }
