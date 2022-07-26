@@ -80,5 +80,6 @@
 
   .img-home img{
     width: 50vw; 
+    max-width: 30rem;
   }
 }
