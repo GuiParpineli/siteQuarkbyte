@@ -10,6 +10,7 @@
 }
 
 .team-pics{
+  padding: 1em;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -17,7 +18,7 @@
 
 .img-team{
   padding: 1em;
-  border-radius: 1em;
+  border-radius: 2em;
   background-color: var(--secondary);
 }
 
@@ -27,8 +28,15 @@
   border-radius: 50%;
 }
 
+.text-about{
+  margin-top: 1em;
+  padding: 5px;
+}
+
 .img-home  {
-  padding: 2em;
+  display:flex;
+  justify-content: center;
+  position: relative;
 }
 
 /* site em tamanho desktop */
@@ -42,6 +50,28 @@
     display: flex;
     justify-content: space-around;
   } 
+
+  .img-team{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:10px;
+  }
+
+  .img-team > img{
+    padding: 10px;
+  }
+
+  .img-team > h3{
+    width: 20%;
+  }
+  .img-team > p{
+    padding:10px;
+    width:70%;
+  }
+  .img-team > small{
+    width:20%;
+  }
 
   .img-home{
     display: flex;
