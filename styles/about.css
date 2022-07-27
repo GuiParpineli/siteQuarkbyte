@@ -52,6 +52,7 @@
   } 
 
   .img-team{
+    justify-content: space-around;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -66,8 +67,7 @@
     width: 20%;
   }
   .img-team > p{
-    padding:10px;
-    width:70%;
+    width:80%;
   }
   .img-team > small{
     width:20%;
